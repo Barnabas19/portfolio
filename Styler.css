@@ -437,14 +437,6 @@ img{
     float: left;
     margin-left: 0;
 }
-.div:nth-child(5){
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-.article5{
-    flex: 0 0 40%;
-}
 h5{
     font-size: 20px;
     text-align: center;
@@ -453,7 +445,6 @@ h5{
 }
 .paragraph3,
 .paragraph4,
-.paragraph5,
 .paragraph6{
     color: rgb(21, 21, 46);
     opacity: 1.0;
@@ -467,15 +458,36 @@ h5{
 }
 .heading3,
 .heading4,
-.heading5,
 .heading6{
     text-align: center;
     margin-left: 0;
     margin-right: 0;
 }
-.article3,
-.article4,
+.div:nth-child(5){
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-flow: row wrap;
+}
 .article5{
+    flex: 0 0 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: block;
+}
+.article5 h5,
+.heading5,
+.paragraph5{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+}
+.article3,
+.article4{
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
